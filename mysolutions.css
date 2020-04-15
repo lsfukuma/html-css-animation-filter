@@ -100,12 +100,21 @@
 }
 
 
-
 /* --Esercizio 11 */
 .ex-11-icon {
-    transition: 5s;
+    animation-duration: 3s;
+    animation-name: ex11;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay:
 }
 
-.ex-11-icon:hover {
-    transform: rotate(320deg);
+@keyframes ex11 {
+    0 {transform: rotate(0);}
+    75% {transform: rotate(270deg);}
+}
+
+/* ---Esercizio 12 */
+.ex-12-top-white , .ex-12-bottom-white {
+    
 }
