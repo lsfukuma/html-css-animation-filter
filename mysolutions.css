@@ -38,5 +38,51 @@
 
 /* --Esercizio 5 */
 .ex-5-square {
-    transition:
+    transition-duration: 2s;
+}
+
+.ex-5-square:hover {
+    height: 100px;
+    width: 100px;
+}
+
+.ex-5-square:active {
+    height: 20px;
+    width: 20px;
+}
+
+/* -- Esercizio 6 */
+.ex-6-img:hover {
+    filter: grayscale(100%);
+}
+
+/* -- Esercizio 7 */
+.ex-7-img {
+    transition: 3s;
+}
+
+.ex-7-img:hover {
+    filter: brightness(50%);
+    opacity: 0.75;
+}
+
+/* --Esercizio 8 */
+.ex-8-img {
+    transition: 3s;
+}
+
+.ex-8-img:hover {
+    border-radius: 20px;
+    filter: opacity(0.4)sepia(0.6);
+}
+
+/* -- Esercizio 9 */
+.ex-9-img {
+    transition: 2s;
+}
+
+.ex-9-img:hover {
+    border-radius: 20px;
+    transform: scale(1.5);
+    filter: grayscale(0.3)sepia(0.5);
 }
