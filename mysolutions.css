@@ -86,3 +86,26 @@
     transform: scale(1.5);
     filter: grayscale(0.3)sepia(0.5);
 }
+
+/* --Esercizio 10 */
+.ex-10-icon {
+    animation-duration: 3s;
+    animation-name: ex10;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes ex10 {
+    to {transform: rotate(360deg);}
+}
+
+
+
+/* --Esercizio 11 */
+.ex-11-icon {
+    transition: 5s;
+}
+
+.ex-11-icon:hover {
+    transform: rotate(320deg);
+}
