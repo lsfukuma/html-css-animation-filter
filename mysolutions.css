@@ -116,7 +116,8 @@
 /* ---Esercizio 12 */
 .ex-12-top-white , .ex-12-bottom-white {
     animation-duration: 2s;
-
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
 .ex-12-top-white {
@@ -125,30 +126,51 @@
 
 @keyframes ex-12-top {
     0% {left: 10%;}
-    100% {left: calc(100% - 60px);}
+    50% {left: calc(100% - 60px);}
+    100% {left: 10%;}
 }
 
 .ex-12-bottom-white {
     animation-name: ex-12-bottom;
-    animation-direction: reverse;
 }
 
 @keyframes ex-12-bottom {
     0% {right: 20%;}
-    100% {right: 0;}
+    50% {right: calc(100% - 60px);}
+    100% {right: 20%;}
 }
 
 /* --Esercizio 13 */
-.ex-13-top-white , .ex-bottom-white {
-    animation-duration: 2s;
+.ex-13-top-white , .ex-13-bottom-white {
+    animation-duration: 5s;
+    animation-iteration-count: 5;
+    animation-timing-function: linear;
+    background-color: blue;
 
 }
 
-.ex-12-top-white {
-    animation-name: ex12-top;
+.ex-13-top-white {
+    animation-name: ex-13-top;
 }
 
-@keyframes ex12-top {
-    0% {left: 10%;}
-    100% {left: calc(100% - 60px);}
+@keyframes ex-13-top {
+    0% {left: 10%; top: 10%; }
+    15% {left: calc(100% - 60px); top: 0;}
+    25% {left: calc(100% - 60) ; top: 50%;}
+    100% {left: 10%; }
 }
+
+.ex-13-bottom-white {
+    animation-name: ex-13-bottom;
+}
+
+@keyframes ex-13-bottom {
+    0% {right: 20%; }
+    25% {right: calc(80% - 60px); }
+    /*50% {right: calc(80% - 60px); top: 0;}
+    100% {right: }*/
+}
+    /*
+    50% {right: calc(80% - 60px); bottom: calc(100% - 20%);}
+    100% {right: 0 bottom: calc(100% - 20%);}
+}IDEA:  */
