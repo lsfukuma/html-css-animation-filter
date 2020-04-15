@@ -101,12 +101,11 @@
 
 
 /* --Esercizio 11 */
-.ex-11-icon {
-    animation-duration: 3s;
+.ex-11-icon:hover {
+    animation-duration: 2s;
     animation-name: ex11;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-    animation-delay:
 }
 
 @keyframes ex11 {
@@ -116,5 +115,40 @@
 
 /* ---Esercizio 12 */
 .ex-12-top-white , .ex-12-bottom-white {
-    
+    animation-duration: 2s;
+
+}
+
+.ex-12-top-white {
+    animation-name: ex-12-top;
+}
+
+@keyframes ex-12-top {
+    0% {left: 10%;}
+    100% {left: calc(100% - 60px);}
+}
+
+.ex-12-bottom-white {
+    animation-name: ex-12-bottom;
+    animation-direction: reverse;
+}
+
+@keyframes ex-12-bottom {
+    0% {right: 20%;}
+    100% {right: 0;}
+}
+
+/* --Esercizio 13 */
+.ex-13-top-white , .ex-bottom-white {
+    animation-duration: 2s;
+
+}
+
+.ex-12-top-white {
+    animation-name: ex12-top;
+}
+
+@keyframes ex12-top {
+    0% {left: 10%;}
+    100% {left: calc(100% - 60px);}
 }
